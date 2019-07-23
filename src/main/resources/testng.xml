@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="FREE CRM TEST SUITE">
+	<listeners>
+ 
+ 		<listener class-name="com.crm.qa.ExtentReportListener.ExtentReporterNG"></listener>
+ 
+ 	</listeners>
+ <test name="FREE CRM TEST">
+<!--  <groups>
+    <run>
+      <include name="Login page"/>
+      <exclude name="Logout Page"/>
+    </run>
+  </groups> -->
+ 
+ <classes>
+	 <class name="com.crm.qa.testcases.LoginPageTest" />
+	 <class name="com.crm.qa.testcases.HomePageTest" />
+	 <class name="com.crm.qa.testcases.ContactsPageTest" />
+ </classes>
+ </test>
+</suite>
